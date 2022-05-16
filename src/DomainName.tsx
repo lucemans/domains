@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { useSwiperSlide } from "swiper/react/swiper-react";
 
 export type Domain = {
-    name: string,
-    status: 'in-use' | 'reserved' | 'in-progress',
-    info?: string
+    name: string;
+    status: "in-use" | "reserved" | "in-progress";
+    info?: string;
+    domain?: string;
 };
 
 const Wrapper = styled.div<{ active: string }>`
     font-size: 3rem;
-    opacity: ${({ active }) => (active)};
+    opacity: ${({ active }) => active};
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -43,18 +44,16 @@ export const DomainName: FC<{ domain: Domain }> = ({ domain }) => {
     const { isActive } = useSwiperSlide();
 
     return (
-        <Wrapper active={isActive ? "1" : (domain.status=='reserved' ? '0.2' : '0.4')}>
+        <Wrapper
+            active={
+                isActive ? "1" : domain.status == "reserved" ? "0.2" : "0.4"
+            }
+        >
             .{domain.name}
-                <LabelSpot>
-                    {
-                        domain.status == 'in-use' &&
-                        <CheckMarkLabel></CheckMarkLabel>
-                    }
-                    {
-                        domain.status == 'in-progress' &&
-                        <ProgressLabel />
-                    }
-                </LabelSpot>
+            <LabelSpot>
+                {domain.status == "in-use" && <CheckMarkLabel></CheckMarkLabel>}
+                {domain.status == "in-progress" && <ProgressLabel />}
+            </LabelSpot>
         </Wrapper>
     );
 };

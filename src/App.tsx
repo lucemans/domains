@@ -22,15 +22,12 @@ const Wrapper = styled.div`
     }
 `;
 
-const SectionGap = styled.div`
-    max-width: 200px;
-    flex: 1;
-`;
-
 const Domain = styled.div`
     color: var(--color-pink);
     margin-top: 200px;
     text-align: right;
+    max-width: 300px;
+    flex: 1;
     @media screen and (max-width: 800px) {
         margin-top: 120px;
     }
@@ -74,6 +71,7 @@ const List: Domain[] = [
         info: "Collection of Presentations & Slides",
     },
     {
+        domain: 'lucemans',
         name: "eth",
         status: "in-use",
         info: "Ethereum Address",
@@ -130,8 +128,7 @@ export const App: FC = () => {
     const [selected, setSelected] = useState(0);
     return (
         <Wrapper>
-            <SectionGap />
-            <Domain>luc</Domain>
+            <Domain>{List[selected] && List[selected].domain  || "luc"}</Domain>
             <Swiper
                 className="height"
                 slidesOffsetAfter={0}

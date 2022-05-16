@@ -10,6 +10,10 @@ const Wrapper = styled.div`
         height: 100vh;
         overflow: hidden;
         padding-top: 200px;
+        @media screen and (max-width: 800px) {
+            padding-top: 120px;
+            padding-bottom: calc(100vh - 156px);
+        }
         padding-bottom: calc(100vh - 259px);
         width: fit-content;
     }
@@ -26,6 +30,9 @@ const Domain = styled.div`
     color: var(--color-pink);
     margin-top: 200px;
     text-align: right;
+    @media screen and (max-width: 800px) {
+        margin-top: 120px;
+    }
 `;
 
 const List: Domain[] = [

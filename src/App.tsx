@@ -48,7 +48,7 @@ const List: Domain[] = [
     {
         name: "domains",
         status: "in-use",
-        info: "The page you are viewing right now",
+        info: "The page you are viewing right now"
     },
     {
         name: "contact",
@@ -71,7 +71,7 @@ const List: Domain[] = [
         info: "Collection of Presentations & Slides",
     },
     {
-        domain: 'lucemans',
+        domain: "lucemans",
         name: "eth",
         status: "in-use",
         info: "Ethereum Address",
@@ -128,7 +128,9 @@ export const App: FC = () => {
     const [selected, setSelected] = useState(0);
     return (
         <Wrapper>
-            <Domain>{List[selected] && List[selected].domain  || "luc"}</Domain>
+            <Domain>
+                {(List[selected] && List[selected].domain) || "luc"}
+            </Domain>
             <Swiper
                 className="height"
                 slidesOffsetAfter={0}

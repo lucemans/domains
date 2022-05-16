@@ -1,6 +1,8 @@
 import { FC, ReactChild } from "react";
 import styled, { keyframes } from "styled-components";
 import { Domain } from "./DomainName";
+import { Computer } from "./modules/Computer";
+import { Ethereum } from "./modules/Ethereum";
 
 const FadeInPerimAnim = keyframes`
     0% {
@@ -114,6 +116,12 @@ export const InfoBox: FC<{ domain: Domain }> = ({ domain }) => {
                             </span>
                         </div>
                         <Description>{domain.info}</Description>
+                        {
+                            domain.name == 'eth' && <Ethereum />
+                        }
+                        {
+                            domain.name == 'computer' && <Computer />
+                        }
                     </Body>
                 )) || (
                     <Body>

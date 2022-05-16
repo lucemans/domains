@@ -1,2 +1,2 @@
-![](assets/github_banner.png)
+[![](assets/github_banner.png)](https://luc.domains/)
 

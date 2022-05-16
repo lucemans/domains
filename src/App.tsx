@@ -1,5 +1,6 @@
 import { FC, useMemo, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import keybinds from "url:../assets/keybinds.svg";
 
 const Wrapper = styled.div`
     display: flex;
@@ -32,6 +33,17 @@ const Domain = styled.div`
     text-align: right;
     @media screen and (max-width: 800px) {
         margin-top: 120px;
+    }
+`;
+
+const Keybinds = styled.img`
+    position: absolute;
+    right: 64px;
+    bottom: 64px;
+    width: auto;
+    height: auto;
+    @media screen and (max-width: 800px) {
+        display: none;
     }
 `;
 
@@ -151,6 +163,7 @@ export const App: FC = () => {
             {selected >= 0 && selected < List.length && (
                 <InfoBox domain={List[selected]} />
             )}
+            <Keybinds src={keybinds} />
         </Wrapper>
     );
 };

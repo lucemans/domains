@@ -32,7 +32,7 @@ const FadeInAnim = keyframes`
 `;
 
 const FadeInPerimiter = styled.div`
-    width: 800px;
+    max-width: 800px;
     height: fit-content;
     border-left: 4px solid white;
     margin: 200px 0;
@@ -42,6 +42,19 @@ const FadeInPerimiter = styled.div`
     font-size: 2rem;
     padding-left: 1rem;
     animation: ${FadeInPerimAnim} 2s forwards;
+
+    @media screen and (max-width: 800px) {
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #111;
+        bottom: 0;
+        max-height: 400px;
+        margin: 0;
+        overflow-y: auto;
+        box-shadow: 0 0 10px var(--color-blue);
+    }
 `;
 
 const FadeInBox = styled.div`

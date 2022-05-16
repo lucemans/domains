@@ -4,21 +4,28 @@ import styled, { keyframes } from "styled-components";
 const Wrapper = styled.div`
     display: flex;
     font-size: 3rem;
+    justify-content: flex-start;
     width: 100%;
-    margin-left: 200px;
     .height {
         height: 100vh;
         overflow: hidden;
         padding-top: 200px;
         padding-bottom: calc(100vh - 259px);
+        width: fit-content;
     }
     .spacing {
     }
 `;
 
+const SectionGap = styled.div`
+    max-width: 200px;
+    flex: 1;
+`;
+
 const Domain = styled.div`
     color: var(--color-pink);
     margin-top: 200px;
+    text-align: right;
 `;
 
 const List: Domain[] = [
@@ -99,6 +106,7 @@ export const App: FC = () => {
     const [selected, setSelected] = useState(0);
     return (
         <Wrapper>
+            <SectionGap />
             <Domain>luc</Domain>
             <Swiper
                 className="height"

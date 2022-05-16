@@ -17,6 +17,7 @@ const Wrapper = styled.a<{ activeOpacity: string }>`
     gap: 0.5rem;
     min-width: 100%;
     color: inherit;
+    text-decoration: none !important;
     &:focus {
         outline: none;
     }

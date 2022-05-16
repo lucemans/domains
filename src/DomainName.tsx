@@ -59,13 +59,13 @@ export const DomainName: FC<{ domain: Domain }> = ({ domain }) => {
     return (
         <Wrapper
             ref={ref}
+            target="_blank"
             activeOpacity={
                 isActive ? "1" : domain.status == "reserved" ? "0.2" : "0.4"
             }
             href={"https://" + (domain.domain || "luc") + "." + domain.name}
             onClickCapture={(e) => {
                 if (ref.current && ref.current == document.activeElement) {
-
                 } else {
                     e.preventDefault();
                 }

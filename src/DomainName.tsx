@@ -20,6 +20,10 @@ const Wrapper = styled.div<{ active: string }>`
 const LabelSpot = styled.div`
     min-width: 80px;
     height: 100%;
+
+    @media screen and (max-width: 800px) {
+        min-width: 60px;
+    }
 `;
 
 const CheckMarkLabel = styled.div`

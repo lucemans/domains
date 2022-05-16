@@ -61,6 +61,11 @@ const List: Domain[] = [
         status: "in-use",
         info: "Collection of Presentations & Slides",
     },
+    {
+        name: "eth",
+        status: "in-use",
+        info: "Ethereum Address",
+    },
     { name: "company", status: "reserved" },
     { name: "social", status: "reserved" },
     { name: "directory", status: "reserved" },

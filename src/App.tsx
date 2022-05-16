@@ -154,7 +154,7 @@ export const App: FC = () => {
                 }}
             >
                 {List.map((item) => (
-                    <SwiperSlide className="spacing">
+                    <SwiperSlide className="spacing" key={item.name}>
                         <DomainName domain={item} />
                     </SwiperSlide>
                 ))}

@@ -34,6 +34,7 @@ const FadeInAnim = keyframes`
 `;
 
 const FadeInPerimiter = styled.div`
+    flex-shrink: 1;
     max-width: 800px;
     height: fit-content;
     border-left: 4px solid white;

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { useSwiperSlide } from "swiper/react/swiper-react";
 
@@ -9,13 +9,17 @@ export type Domain = {
     domain?: string;
 };
 
-const Wrapper = styled.div<{ active: string }>`
+const Wrapper = styled.a<{ activeOpacity: string }>`
     font-size: 3rem;
-    opacity: ${({ active }) => active};
+    opacity: ${({ activeOpacity }) => activeOpacity};
     display: flex;
     align-items: center;
     gap: 0.5rem;
     min-width: 100%;
+    color: inherit;
+    &:focus {
+        outline: none;
+    }
 `;
 
 const LabelSpot = styled.div`
@@ -42,12 +46,30 @@ const ProgressLabel = styled.div`
 
 export const DomainName: FC<{ domain: Domain }> = ({ domain }) => {
     const { isActive } = useSwiperSlide();
+    const ref = useRef();
+
+    useEffect(() => {
+        if (isActive) {
+            if (ref.current) {
+                ref.current["focus"]();
+            }
+        }
+    }, [isActive, ref]);
 
     return (
         <Wrapper
-            active={
+            ref={ref}
+            activeOpacity={
                 isActive ? "1" : domain.status == "reserved" ? "0.2" : "0.4"
             }
+            href={"https://" + (domain.domain || "luc") + "." + domain.name}
+            onClickCapture={(e) => {
+                if (ref.current && ref.current == document.activeElement) {
+
+                } else {
+                    e.preventDefault();
+                }
+            }}
         >
             .{domain.name}
             <LabelSpot>

@@ -48,7 +48,7 @@ const List: Domain[] = [
     {
         name: "domains",
         status: "in-use",
-        info: "The page you are viewing right now"
+        info: "The page you are viewing right now",
     },
     {
         name: "contact",
@@ -76,6 +76,11 @@ const List: Domain[] = [
         status: "in-use",
         info: "Ethereum Address",
     },
+    {
+        name: "tools",
+        status: "in-use",
+        info: "List of tools I work on / maintain.",
+    },
     { name: "company", status: "reserved" },
     { name: "social", status: "reserved" },
     { name: "directory", status: "reserved" },
@@ -90,7 +95,6 @@ const List: Domain[] = [
     { name: "txt", status: "reserved" },
     { name: "js", status: "reserved" },
     { name: "university", status: "reserved" },
-    { name: "tools", status: "reserved" },
     { name: "services", status: "reserved" },
     { name: "photos", status: "reserved" },
     { name: "news", status: "reserved" },

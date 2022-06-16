@@ -86,6 +86,11 @@ const List: Domain[] = [
         status: "in-use",
         info: "A website to answer the question once and for all",
     },
+    {
+        name: "community",
+        status: "in-use",
+        info: "this is where the cool stuff happens!",
+    },
     { name: "company", status: "reserved" },
     { name: "social", status: "reserved" },
     { name: "directory", status: "reserved" },
@@ -113,7 +118,6 @@ const List: Domain[] = [
     { name: "direct", status: "reserved" },
     { name: "chat", status: "reserved" },
     { name: "agency", status: "reserved" },
-    { name: "community", status: "reserved" },
     { name: "wiki", status: "reserved" },
 ].sort((a, b) =>
     a.status == b.status

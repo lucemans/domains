@@ -79,7 +79,12 @@ const List: Domain[] = [
     {
         name: "tools",
         status: "in-use",
-        info: "List of tools I work on / maintain.",
+        info: "List of tools I work on / maintain",
+    },
+    {
+        name: "gay",
+        status: "in-use",
+        info: "A website to answer the question once and for all",
     },
     { name: "company", status: "reserved" },
     { name: "social", status: "reserved" },

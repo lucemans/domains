@@ -16,7 +16,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: yarn
       - name: Build
-        run: yarn Build
+        run: yarn build
       - name: Edgeserver Upload
         uses: lvkdotsh/edgeserver-action@master
         with:

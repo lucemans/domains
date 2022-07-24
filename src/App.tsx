@@ -119,6 +119,11 @@ const List: Domain[] = [
     { name: "chat", status: "reserved" },
     { name: "agency", status: "reserved" },
     { name: "wiki", status: "reserved" },
+    { name: "bike", status: "reserved" },
+    { name: "fund", status: "reserved" },
+    { name: "sex", status: "reserved" },
+    { name: "xxx", status: "reserved" },
+    { name: "pet", status: "reserved" },
 ].sort((a, b) =>
     a.status == b.status
         ? 0

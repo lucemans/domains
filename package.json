@@ -14,7 +14,7 @@
     "swiper": "^8.1.4"
   },
   "scripts": {
-    "build": "parcel build --public-url https://luc.domains src/index.html",
+    "build": "parcel build --public-url https://luc.domains src/index.html && cp ./src/api.json ./dist/api.json",
     "start": "parcel src/index.html",
     "dev": "parcel src/index.html"
   },

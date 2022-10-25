@@ -1,0 +1,92 @@
+[
+    {
+        "name": "domains",
+        "status": "in-use",
+        "info": "The page you are viewing right now"
+    },
+    {
+        "name": "contact",
+        "status": "in-use",
+        "info": "Ways to contact me and see what is new"
+    },
+    {
+        "name": "computer",
+        "status": "in-use",
+        "info": "Articles, posts, and other content I create"
+    },
+    {
+        "name": "page",
+        "status": "in-progress",
+        "info": "Live-hosted preview sites / demos"
+    },
+    {
+        "name": "show",
+        "status": "in-use",
+        "info": "Collection of Presentations & Slides"
+    },
+    {
+        "domain": "lucemans",
+        "name": "eth",
+        "status": "in-use",
+        "info": "Ethereum Address"
+    },
+    {
+        "name": "tools",
+        "status": "in-use",
+        "info": "List of tools I work on / maintain"
+    },
+    {
+        "name": "gay",
+        "status": "in-use",
+        "info": "A website to answer the question once and for all"
+    },
+    {
+        "name": "community",
+        "status": "in-use",
+        "info": "this is where the cool stuff happens!"
+    },
+    {
+        "name": "social",
+        "status": "in-use",
+        "info": "for communication i guess"
+    },
+    { "name": "company", "status": "reserved" },
+    { "name": "directory", "status": "reserved" },
+    { "name": "software", "status": "reserved" },
+    { "name": "gallery", "status": "reserved" },
+    { "name": "codes", "status": "reserved" },
+    { "name": "cool", "status": "reserved" },
+    { "name": "church", "status": "reserved" },
+    { "name": "foundation", "status": "reserved" },
+    { "name": "finance", "status": "reserved" },
+    { "name": "university", "status": "reserved" },
+    { "name": "services", "status": "reserved" },
+    { "name": "photos", "status": "reserved" },
+    { "name": "news", "status": "reserved" },
+    { "name": "land", "status": "reserved" },
+    { "name": "institute", "status": "reserved" },
+    { "name": "guide", "status": "reserved" },
+    { "name": "global", "status": "reserved" },
+    { "name": "fan", "status": "reserved" },
+    { "name": "equipment", "status": "reserved" },
+    { "name": "earth", "status": "reserved" },
+    { "name": "direct", "status": "reserved" },
+    { "name": "chat", "status": "reserved" },
+    { "name": "agency", "status": "reserved" },
+    { "name": "wiki", "status": "reserved" },
+    { "name": "bike", "status": "reserved" },
+    { "name": "fund", "status": "reserved" },
+    { "name": "sex", "status": "reserved" },
+    { "name": "xxx", "status": "reserved" },
+    { "name": "pet", "status": "reserved" },
+    { "name": "blog", "status": "reserved" },
+    { "name": "place", "status": "reserved" },
+    { "name": "horse", "status": "reserved" },
+    { "name": "energy", "status": "reserved" },
+    { "name": "cards", "status": "reserved" },
+    { "name": "bio", "status": "reserved" },
+    { "name": "health", "status": "reserved" },
+    { "name": "college", "status": "reserved" },
+    { "name": "hair", "status": "reserved" },
+    { "name": "rent", "status": "reserved" }
+]

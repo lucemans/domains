@@ -122,6 +122,15 @@ const List: Domain[] = [
     { name: "xxx", status: "reserved" },
     { name: "pet", status: "reserved" },
     { name: "blog", status: "reserved" },
+    { name: "place", status: "reserved" },
+    { name: "horse", status: "reserved" },
+    { name: "energy", status: "reserved" },
+    { name: "cards", status: "reserved" },
+    { name: "bio", status: "reserved" },
+    { name: "health", status: "reserved" },
+    { name: "college", status: "reserved" },
+    { name: "hair", status: "reserved" },
+    { name: "rent", status: "reserved" },
 ].sort((a, b) =>
     a.status == b.status
         ? 0

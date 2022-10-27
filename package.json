@@ -11,7 +11,8 @@
     "react-dom": "^18.1.0",
     "sass": "^1.51.0",
     "styled-components": "^5.3.5",
-    "swiper": "^8.1.4"
+    "swiper": "^8.1.4",
+    "vite": "^3.2.0"
   },
   "scripts": {
     "build": "parcel build --public-url https://luc.domains src/index.html && cp ./src/api.json ./dist/api.json",

@@ -88,5 +88,7 @@
     { "name": "health", "status": "reserved" },
     { "name": "college", "status": "reserved" },
     { "name": "hair", "status": "reserved" },
-    { "name": "rent", "status": "reserved" }
+    { "name": "rent", "status": "reserved" },
+    { "name": "studio", "status": "reserved" },
+    { "name": "academy", "status": "reserved"}
 ]

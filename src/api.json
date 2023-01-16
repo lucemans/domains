@@ -50,6 +50,7 @@
         "status": "in-use",
         "info": "for communication i guess"
     },
+    { "name": "sex", "status": "in-use", "info": "Yes" },
     { "name": "company", "status": "reserved" },
     { "name": "directory", "status": "reserved" },
     { "name": "software", "status": "reserved" },
@@ -76,7 +77,6 @@
     { "name": "wiki", "status": "reserved" },
     { "name": "bike", "status": "reserved" },
     { "name": "fund", "status": "reserved" },
-    { "name": "sex", "status": "reserved" },
     { "name": "xxx", "status": "reserved" },
     { "name": "pet", "status": "reserved" },
     { "name": "blog", "status": "reserved" },
@@ -90,5 +90,5 @@
     { "name": "hair", "status": "reserved" },
     { "name": "rent", "status": "reserved" },
     { "name": "studio", "status": "reserved" },
-    { "name": "academy", "status": "reserved"}
+    { "name": "academy", "status": "reserved" }
 ]

@@ -18,7 +18,7 @@ export const EmojiCard: FC<{ domain: DomainInfo }> = ({ domain }) => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             whileFocus={{ scale: 1.05 }}
-            href={`https://nimi/luc.${domain.name}/details`}
+            href={`https://luc.${domain.name}`}
             className="relative block col-span-2 row-span-2 aspect-square shadow-md bg-[#333] rounded-md text-white font-bold p-4 overflow-hidden"
         >
             <div className="text-2xl">

@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: '16.9.1'
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn
+      - run: pnpm install
       - name: Build
-        run: yarn build
+        run: pnpm build
       - name: Edgeserver Upload
         uses: lvkdotsh/edgeserver-action@master
         with:

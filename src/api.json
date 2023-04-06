@@ -12,7 +12,8 @@
     {
         "name": "computer",
         "status": "in-use",
-        "info": "Articles, posts, and other content I create"
+        "info": "Articles, posts, and other content I create",
+        "emoji": "1F5A5"
     },
     {
         "name": "page",
@@ -32,12 +33,14 @@
     {
         "name": "tools",
         "status": "in-use",
-        "info": "List of tools I work on / maintain"
+        "info": "List of tools I work on / maintain",
+        "emoji": "1F6E0"
     },
     {
         "name": "gay",
         "status": "in-use",
-        "info": "A website to answer the question once and for all"
+        "info": "A website to answer the question once and for all",
+        "emoji": "1F485"
     },
     {
         "name": "community",
@@ -49,42 +52,51 @@
         "status": "in-use",
         "info": "for communication i guess"
     },
-    { "name": "photos", "status": "in-use", "info": "Just pictures of me and things." },
+    {
+        "name": "photos",
+        "status": "in-use",
+        "info": "Just pictures of me and things.",
+        "emoji": "1F4F8"
+    },
     { "name": "sex", "status": "in-use", "info": "Yes" },
-    { "name": "chat", "status": "in-use", "info": "Goes to telegram or something idk." },
-    { "name": "finance", "status": "reserved" },
+    {
+        "name": "chat",
+        "status": "in-use",
+        "info": "Goes to telegram or something idk."
+    },
+    { "name": "finance", "status": "reserved", "emoji": "1F4B0" },
     { "name": "company", "status": "reserved" },
-    { "name": "directory", "status": "reserved" },
+    { "name": "directory", "status": "reserved", "emoji": "1F5C2" },
     { "name": "software", "status": "reserved" },
-    { "name": "gallery", "status": "reserved" },
-    { "name": "codes", "status": "reserved" },
-    { "name": "cool", "status": "reserved" },
+    { "name": "gallery", "status": "reserved", "emoji": "1F5BC" },
+    { "name": "codes", "status": "reserved", "emoji": "2328" },
+    { "name": "cool", "status": "reserved", "emoji": "1F60E" },
     { "name": "church", "status": "reserved" },
     { "name": "foundation", "status": "reserved" },
-    { "name": "university", "status": "reserved" },
+    { "name": "university", "status": "reserved", "emoji": "1F393" },
     { "name": "services", "status": "reserved" },
-    { "name": "news", "status": "reserved" },
-    { "name": "land", "status": "reserved" },
+    { "name": "news", "status": "reserved", "emoji": "1F4F0" },
+    { "name": "land", "status": "reserved", "emoji": "1F5FA" },
     { "name": "institute", "status": "reserved" },
-    { "name": "guide", "status": "reserved" },
+    { "name": "guide", "status": "reserved", "emoji": "1F4DA" },
     { "name": "global", "status": "reserved" },
     { "name": "fan", "status": "reserved" },
     { "name": "equipment", "status": "reserved" },
-    { "name": "earth", "status": "reserved" },
+    { "name": "earth", "status": "reserved", "emoji": "1F30D" },
     { "name": "direct", "status": "reserved" },
     { "name": "agency", "status": "reserved" },
     { "name": "wiki", "status": "reserved" },
-    { "name": "bike", "status": "reserved" },
+    { "name": "bike", "status": "reserved", "emoji": "1F6B4" },
     { "name": "fund", "status": "reserved" },
     { "name": "xxx", "status": "reserved" },
     { "name": "pet", "status": "reserved" },
     { "name": "blog", "status": "reserved" },
     { "name": "place", "status": "reserved" },
-    { "name": "horse", "status": "reserved" },
+    { "name": "horse", "status": "reserved", "emoji": "1F434" },
     { "name": "energy", "status": "reserved" },
+    { "name": "health", "status": "reserved", "emoji": "1F3E5" },
     { "name": "cards", "status": "reserved" },
     { "name": "bio", "status": "reserved" },
-    { "name": "health", "status": "reserved" },
     { "name": "college", "status": "reserved" },
     { "name": "hair", "status": "reserved" },
     { "name": "rent", "status": "reserved" },

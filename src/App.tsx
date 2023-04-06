@@ -7,6 +7,7 @@ export type DomainInfo = {
     name: string;
     status: 'in-use' | 'in-progress' | 'reserved';
     info: string;
+    emoji?: string;
 };
 
 const data: DomainInfo[] = _data as unknown as DomainInfo[];

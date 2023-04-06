@@ -16,7 +16,7 @@ export const ENSDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             whileFocus={{ scale: 1.05 }}
-            href={`https://nimi/luc.${domain.name}/details`}
+            href={'https://nimi.io/luc.eth'}
             className="relative block col-span-2 row-span-2 aspect-square rounded-md bg-blue-400 text-white font-bold p-4 overflow-hidden"
         >
             <div className="text-2xl">

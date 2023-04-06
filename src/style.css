@@ -61,6 +61,12 @@ html {
     --color-main: var(--theme-text-main);
     --color-alt: var(--theme-text-alt);
 }
+@media (max-width: 640px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
 @media print {
     html,
     body {

@@ -1,4 +1,3 @@
-import { AnimatePresence } from 'framer-motion';
 import { FC } from 'react';
 
 import _data from './api.json';
@@ -14,16 +13,18 @@ const data: DomainInfo[] = _data as unknown as DomainInfo[];
 
 export const App: FC = () => {
     return (
-        <div className="w-full px-4 mx-auto max-w-xl mt-24">
-            <div className="flex mb-8 items-center">
+        <div className="w-full px-4 mx-auto max-w-4xl mt-12 md:mt-24">
+            <div className="flex mb-8 items-center gap-4">
                 <img src="/output2.webp" alt="" className="w-16" />
+                <div>
+                    <div className="text-xl">Luc van Kampen</div>
+                    <p className="opacity-80">@lucemans</p>
+                </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <AnimatePresence initial={false}>
-                    {data.map((domain: DomainInfo) => (
-                        <DomainEntry key={domain.name} domain={domain} />
-                    ))}
-                </AnimatePresence>
+            <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                {data.map((domain: DomainInfo) => (
+                    <DomainEntry key={domain.name} domain={domain} />
+                ))}
             </div>
         </div>
     );

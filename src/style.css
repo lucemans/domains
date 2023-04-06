@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
     background: var(--color-bg);
@@ -6,7 +10,6 @@ body {
     font-weight: bold;
     margin: 0;
     padding: 0;
-    // text-transform: uppercase;
 }
 html {
     overflow-y: overlay;
@@ -40,7 +43,6 @@ html {
     background: transparent;
 }
 :root {
-    font-size: 16px;
     --theme-bg: var(--color-almost-black);
     --theme-text-main: var(--color-white);
     --theme-text-post: var(--color-text-white);
@@ -71,24 +73,3 @@ html {
     }
 }
 
-@media screen and (max-width: 800px) {
-    :root {
-        font-size: 12px;
-    }
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-}
-a {
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
-}

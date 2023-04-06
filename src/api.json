@@ -25,7 +25,6 @@
         "info": "Collection of Presentations & Slides"
     },
     {
-        "domain": "lucemans",
         "name": "eth",
         "status": "in-use",
         "info": "Ethereum Address"
@@ -50,7 +49,10 @@
         "status": "in-use",
         "info": "for communication i guess"
     },
+    { "name": "photos", "status": "in-use", "info": "Just pictures of me and things." },
     { "name": "sex", "status": "in-use", "info": "Yes" },
+    { "name": "chat", "status": "in-use", "info": "Goes to telegram or something idk." },
+    { "name": "finance", "status": "reserved" },
     { "name": "company", "status": "reserved" },
     { "name": "directory", "status": "reserved" },
     { "name": "software", "status": "reserved" },
@@ -59,10 +61,8 @@
     { "name": "cool", "status": "reserved" },
     { "name": "church", "status": "reserved" },
     { "name": "foundation", "status": "reserved" },
-    { "name": "finance", "status": "reserved" },
     { "name": "university", "status": "reserved" },
     { "name": "services", "status": "reserved" },
-    { "name": "photos", "status": "reserved" },
     { "name": "news", "status": "reserved" },
     { "name": "land", "status": "reserved" },
     { "name": "institute", "status": "reserved" },
@@ -72,7 +72,6 @@
     { "name": "equipment", "status": "reserved" },
     { "name": "earth", "status": "reserved" },
     { "name": "direct", "status": "reserved" },
-    { "name": "chat", "status": "reserved" },
     { "name": "agency", "status": "reserved" },
     { "name": "wiki", "status": "reserved" },
     { "name": "bike", "status": "reserved" },

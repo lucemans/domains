@@ -5,8 +5,6 @@ import { DomainInfo } from 'src/App';
 export const ENSDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
     return (
         <motion.a
-            initial={false}
-            animate={{ y: -20, opacity: 0 }}
             transition={{
                 duration: 0.3,
                 type: 'spring',
@@ -19,8 +17,7 @@ export const ENSDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
             whileTap={{ scale: 0.95 }}
             whileFocus={{ scale: 1.05 }}
             href={`https://luc.${domain.name}`}
-            className="relative block aspect-square rounded-md bg-blue-400 text-white font-bold p-4 overflow-hidden"
-            target="_blank"
+            className="relative block col-span-2 row-span-2 aspect-square rounded-md bg-blue-400 text-white font-bold p-4 overflow-hidden"
         >
             <div className="text-2xl">
                 <span className="opacity-40">luc</span>.{domain.name}

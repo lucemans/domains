@@ -79,3 +79,11 @@ html {
     }
 }
 
+a {
+    -webkit-tap-highlight-color: #ff0000;
+}
+
+a {
+    -webkit-appearance: none;
+    outline: none;
+}

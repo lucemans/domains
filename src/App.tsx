@@ -21,7 +21,7 @@ export const App: FC = () => {
                     <p className="opacity-80">@lucemans</p>
                 </div>
             </div>
-            <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-4 md:grid-cols-8 gap-4 auto-rows-fr">
                 {data.map((domain: DomainInfo) => (
                     <DomainEntry key={domain.name} domain={domain} />
                 ))}

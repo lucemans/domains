@@ -5,8 +5,6 @@ import { DomainInfo } from 'src/App';
 export const UsedDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
     return (
         <motion.a
-            initial={false}
-            animate={{ y: -20, opacity: 0 }}
             transition={{
                 duration: 0.3,
                 type: 'spring',
@@ -14,16 +12,17 @@ export const UsedDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
                 opacity: { duration: 0.03 },
                 y: { duration: 0.3, type: 'spring', bounce: 0.3 },
             }}
-            whileInView={{ y: 0, opacity: 1 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             whileFocus={{ scale: 1.05 }}
             href={`https://luc.${domain.name}`}
-            className="relative block aspect-square rounded-md bg-gradient-to-tr from-blue-500 to-pink-500 text-white font-bold p-4 overflow-hidden"
-            target="_blank"
+            className="relative block col-span-2 row-span-1 sm:row-span-2 rounded-md bg-gradient-to-tr from-blue-500 to-pink-500 text-white font-bold p-4 overflow-hidden"
         >
-            <div className="text-2xl">
+            <div className="text-2xl w-full h-full">
                 <span className="opacity-40">luc</span>.{domain.name}
+            </div>
+            <div className="absolute bottom-1 right-1 text-xs text-white/70">
+                Click me
             </div>
         </motion.a>
     );

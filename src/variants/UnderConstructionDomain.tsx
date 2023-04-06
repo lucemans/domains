@@ -7,8 +7,6 @@ export const UnderConstructionDomain: FC<{ domain: DomainInfo }> = ({
 }) => {
     return (
         <motion.a
-            initial={false}
-            animate={{ y: -20, opacity: 0 }}
             transition={{
                 duration: 0.3,
                 type: 'spring',
@@ -21,16 +19,15 @@ export const UnderConstructionDomain: FC<{ domain: DomainInfo }> = ({
             whileTap={{ scale: 0.95 }}
             whileFocus={{ scale: 1.05 }}
             href={`https://luc.${domain.name}`}
-            className="relative block aspect-square rounded-md border-4 border-yellow-400 text-yellow-400 font-bold p-4 overflow-hidden"
-            target="_blank"
+            className="relative block col-span-2 rounded-md border-4 border-yellow-400 text-yellow-400 font-bold p-4 overflow-hidden"
         >
-            <div className="">
+            <div className="text-2xl w-full h-full">
                 <span className="opacity-40">luc</span>.{domain.name}
             </div>
             <img
                 src="/crane.svg"
                 alt="Construction"
-                className="absolute right-[10%] bottom-0 h-[40%] -scale-x-100"
+                className="absolute right-[10%] bottom-0 h-[70%] -scale-x-100"
             />
         </motion.a>
     );

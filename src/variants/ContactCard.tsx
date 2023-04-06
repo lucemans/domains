@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { FC } from 'react';
 import { DomainInfo } from 'src/App';
 
-export const EmptyDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
+export const ContactCard: FC<{ domain: DomainInfo }> = ({ domain }) => {
     return (
         <motion.a
             transition={{
@@ -17,13 +17,14 @@ export const EmptyDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
             whileTap={{ scale: 0.95 }}
             whileFocus={{ scale: 1.05 }}
             href={`https://luc.${domain.name}`}
-            className="relative block col-span-2 row-span-2 md:col-span-2 md:aspect-square rounded-md bg-gradient-to-tr from-neutral-50/10 to-pink-500 text-white font-bold p-4 overflow-hidden"
+            className="relative block row-span-3 col-span-2 rounded-md bg-white text-white font-bold border-2 overflow-hidden"
         >
-            <div className="w-full h-full text-2xl">
-                <span className="opacity-40">luc</span>.{domain.name}
-            </div>
-            <div className="absolute bottom-1 right-1 text-xs text-white/70">
-                soon™️
+            <div className="relative w-full h-full text-2xl bg-[#222] rounded-md overflow-hidden">
+                <img
+                    src="/contact.webp"
+                    className="absolute inset-0 object-fill h-full"
+                    alt=""
+                />
             </div>
         </motion.a>
     );

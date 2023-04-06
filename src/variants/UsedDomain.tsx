@@ -16,7 +16,7 @@ export const UsedDomain: FC<{ domain: DomainInfo }> = ({ domain }) => {
             whileTap={{ scale: 0.95 }}
             whileFocus={{ scale: 1.05 }}
             href={`https://luc.${domain.name}`}
-            className="relative block col-span-2 row-span-1 sm:row-span-2 rounded-md bg-gradient-to-tr from-blue-500 to-pink-500 text-white font-bold p-4 overflow-hidden"
+            className="relative block col-span-2 row-span-1 sm:row-span-2 rounded-md bg-gradient-to-bl from-blue-500 to-blue-500/10 text-white font-bold p-4 overflow-hidden"
         >
             <div className="text-2xl w-full h-full">
                 <span className="opacity-40">luc</span>.{domain.name}

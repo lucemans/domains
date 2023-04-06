@@ -27,7 +27,7 @@ export const EmojiCard: FC<{ domain: DomainInfo }> = ({ domain }) => {
             <img
                 src={`https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/${emoji}.svg`}
                 alt=""
-                className="absolute right-0 bottom-0 h-[40%]"
+                className="absolute -right-[4%] -bottom-[4%] h-[40%]"
             />
         </motion.a>
     );
